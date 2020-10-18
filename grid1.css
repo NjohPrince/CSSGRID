@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    height: 100vh;
+}
+
+img{
+    width: 100%;
+}
+
+.pic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic h1{
+    position: absolute;
+    color: transparent;
+    display: none;
+}
+
+img:hover{
+    opacity: 0.5;
+}
+
+.pic:hover img{
+    opacity: 0.5;
+}
+
+.pic:hover h1{
+    display: block;
+    color: black;
+}

@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+   display: grid; 
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr;
+   grid-template-areas: "boxa boxa boxb"
+                        "boxc boxd boxb"
+                        "boxc boxe boxe";
+   height: 100vh;
+}
+
+.boxa,
+.boxb,
+.boxc,
+.boxd,
+.boxe,
+.boxf,
+.boxg,
+.boxh,
+.boxi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxa{
+    background-color: teal;
+    grid-area: boxa;
+}
+
+.boxb{
+    background-color: orange;
+    grid-area: boxb;
+}
+
+.boxc{
+    background-color: orangered;
+    grid-area: boxc;
+}
+
+.boxd{
+    background-color: green;
+    grid-area: boxd;
+}
+
+.boxe{
+    background-color: rebeccapurple;
+    grid-area: boxe;
+}
